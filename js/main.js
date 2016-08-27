@@ -11,7 +11,9 @@ function getGuardianArticle() {
 }
 
 
-getGuardianArticle()
-    .then(function (response) {
-        console.log(response);
-    });
+$(document).ready(function () {
+    getGuardianArticle()
+        .then(function (response) {
+            $('.main').append('<h1>'+response.webTitle +'</h1>')
+        });
+})
