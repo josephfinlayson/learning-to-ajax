@@ -16,15 +16,13 @@ function addArticleToPage(article) {
 }
 
 $(document).ready(function () {
-    getGuardianArticle()
-        .then(function (response) {
-
-            console.log('the response from the guardian is', response);
-
-            addArticleToPage(response[9]);
-            addArticleToPage(response[1]);
-            addArticleToPage(response[2]);
-            addArticleToPage(response[3]);
-
-        });
+    // getGuardianArticle()
+    //     .then(function (response) {
+    //         console.log('the response from the guardian is', response);
+    //         addArticleToPage(response[9]);
+    //         addArticleToPage(response[1]);
+    //         addArticleToPage(response[2]);
+    //         addArticleToPage(response[3]);
+    //
+    //     });
 })
