@@ -5,16 +5,14 @@ function getRoverImage(day) {
         .then(function (response) {
                 return response.json()
             }
-        ).then(function (response) {
-            console.log(response)
-        });
+        )
 }
 
 function getShakespeareQuote(quoteName, successFunction, failureFunction) {
     if (!quoteName) {
         quoteName = 'shakespeare';
     }
-    WikiquoteApi.getRandomQuote('shakespeare', successFunction, failureFunction)
+    WikiquoteApi.getRandomQuote(quoteName, successFunction, failureFunction)
 }
 
 
@@ -25,7 +23,7 @@ $(document).ready(function () {
         console.log(error)
     });
 
-    getRoverImage(100).then(function (response) {
+    getRoverImage(1000).then(function (response) {
         console.log(response);
     })
 
